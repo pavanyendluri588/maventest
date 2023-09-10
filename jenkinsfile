@@ -14,8 +14,12 @@ sh 'echo "test stage started"'
 }
 stage("deploying  build file to github"){
 steps{
+sh "echo presentworking directory"
+sh "pwd"
+sh "cd /root/.jenkins/workspace/mavenfromjenkinsfile/webapp/target"
+
 sh "git init"
-sh "git add Target/*"
+sh "git add *.war"
 sh "git remote add orign https://github.com/pavanyendluri588/maventest/edit/master/.git "
 sh "git commit -m push2"
 sh "git push -u orign master"
