@@ -1,0 +1,14 @@
+pipeline{
+agent slave1
+stages{
+stage("build"){
+sh "echo current working directory" 
+sh "pwd"
+sh "mvn build"
+sh "mvn test"
+sh "mvn package"
+sh "mvn install"
+sh "mvn deploy"
+}
+}
+}
