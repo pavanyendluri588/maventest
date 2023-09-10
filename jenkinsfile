@@ -30,6 +30,8 @@ sh "echo orign is sucessfully removed"
 sh "git remote add orign https://github.com/pavanyendluri588/maventest.git"
 sh "pwd"
 sh "git commit -m push2"
+sh "git branch archive"
+sh "git checkout archive"
 sh "git push -u orign master"
 }
 }
