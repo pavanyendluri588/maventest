@@ -32,7 +32,7 @@ sh "pwd"
 sh "git commit -m push2"
 sh "git branch archive"
 sh "git checkout archive"
-sh "git push -u orign master"
+//sh "git push -u orign master"
 }
 }
 }
