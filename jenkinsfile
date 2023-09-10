@@ -19,7 +19,7 @@ sh "pwd"
 sh "cd /root/.jenkins/workspace/mavenfromjenkinsfile/webapp/target"
 
 sh "git init"
-sh "git add webapp/target.war
+sh "git add webapp/target/*.war"
 sh "git remote add orign https://github.com/pavanyendluri588/maventest/edit/master/.git "
 sh "git commit -m push2"
 sh "git push -u orign master"
