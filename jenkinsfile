@@ -30,10 +30,9 @@ sh "echo orign is sucessfully removed"
 sh "git remote add orign https://github.com/pavanyendluri588/maventest.git"
 sh "pwd"
 sh "git commit -m push2"
-sh "git branch -D archive"
-sh "git branch archive"
-sh "git checkout archive"
-//sh "git push -u orign master"
+//before running the pipeline  we need to create the achive branch
+//sh "git checkout archive"
+//sh "git push -u orign achive"
 }
 }
 }
