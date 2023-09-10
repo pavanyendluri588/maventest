@@ -17,10 +17,13 @@ steps{
 sh "echo presentworking directory"
 sh "pwd"
 sh "cd /root/.jenkins/workspace/mavenfromjenkinsfile/webapp/target"
-
+sh "pwd"
 sh "git init"
+sh "pwd"
 sh "git add webapp/target/webapp.war"
+sh "pwd"
 sh "git remote add orign https://github.com/pavanyendluri588/maventest/edit/master/.git "
+sh "pwd"
 sh "git commit -m push2"
 sh "git push -u orign master"
 }
