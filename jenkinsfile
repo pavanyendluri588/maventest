@@ -1,7 +1,6 @@
 pipeline{
-agent slave1
+agent {slave1}
 stages{
-sh "cd "
 stage("build"){
 steps{
 sh "maven build"
