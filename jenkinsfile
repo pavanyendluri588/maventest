@@ -17,7 +17,7 @@ steps{
 sh "git init"
 sh "git add Target/*"
 sh "git remote add orign https://github.com/pavanyendluri588/maventest/edit/master/.git "
-sh "git commit -m "push2""
+sh "git commit -m push2"
 sh "git push -u orign master"
 }
 }
