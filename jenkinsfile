@@ -3,11 +3,13 @@ agent slave1
 stages{
 sh "cd "
 stage("build"){
+steps{
 sh "maven build"
 sh "maven test"
 sh "maven package"
 sh "maven install"
 sh "maven deploy"
+}
 }
 }
 }
