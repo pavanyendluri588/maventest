@@ -1,13 +1,18 @@
 pipeline{
-agent {slave1}
+agent any
 stages{
 stage("build"){
 steps{
-sh "maven build"
-sh "maven test"
-sh "maven package"
-sh "maven install"
-sh "maven deploy"
+mvn build
+mvn maven test
+mvn package
+mvn install
+mvn deploy
+}
+}
+stage("test"){
+steps{
+echo "test stage started"
 }
 }
 }
