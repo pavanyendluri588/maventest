@@ -3,16 +3,16 @@ agent any
 stages{
 stage("build"){
 steps{
-mvn build
-mvn maven test
-mvn package
-mvn install
-mvn deploy
+sh 'mvn build'
+sh 'mvn maven test'
+sh 'mvn package'
+sh 'mvn install'
+sh 'mvn deploy'
 }
 }
 stage("test"){
 steps{
-echo "test stage started"
+sh 'echo "test stage started"'
 }
 }
 }
